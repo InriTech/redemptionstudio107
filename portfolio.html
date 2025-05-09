@@ -27,7 +27,42 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
- 
+  <style>
+    /* Enhanced Logo Styling */
+    .header .logo img {
+      height: auto;
+      width: auto;
+      max-width: 200px; /* Increased from 173px */
+      max-height: 80px; /* Added to maintain aspect ratio */
+      transition: all 0.3s ease;
+    }
+    
+    .scrolled .header .logo img {
+      max-width: 160px; /* Slightly smaller when scrolled */
+      max-height: 64px;
+    }
+    
+    @media (max-width: 992px) {
+      .header .logo img {
+        max-width: 180px;
+        max-height: 70px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .header .logo img {
+        max-width: 150px;
+        max-height: 60px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .header .logo img {
+        max-width: 120px;
+        max-height: 50px;
+      }
+    }
+  </style>
 </head>
 
 <body class="portfolio-page">
@@ -36,19 +71,13 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo.png" alt="" width="80" height="119" >
+        <img src="assets/img/logo.png" alt="Redemption Studio Logo">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-         
-         
           <li><a href="portfolio.html" class="active">Portfolio</a></li>
-         
-          
-          
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -81,7 +110,6 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">View Our Work</li>
-            
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -89,25 +117,20 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-               
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -116,54 +139,42 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-               
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-               
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                
                 <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                
               </div>
             </div><!-- End Portfolio Item -->
 
@@ -175,17 +186,11 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Testimonials Section -->
-    
-
   </main>
 
   <footer id="footer" class="footer light-background">
     <div class="container">
       <div class="row g-4">
-        
-        
-        
         <div class="col-md-6 col-lg-3 pl-lg-5">
           <div class="widget">
             <h3 class="widget-heading">Connect With Us</h3>
@@ -196,23 +201,20 @@
               <li>
                 <a href="https://www.instagram.com/redemptionstudio107/"><span class="bi bi-instagram"></span></a>
               </li>
-              
             </ul>
           </div>
-
-          
         </div>
       </div>
 
       <div class="copyright d-flex flex-column flex-md-row align-items-center justify-content-md-between">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">RedemptionStudio107</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
-         
           Designed by <a href="https://inritech.co.za/">InriTech</a>
         </div>
       </div>
     </div>
   </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
